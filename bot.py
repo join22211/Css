@@ -10,7 +10,7 @@ API_ID = os.environ.get("API_ID","20681593")
 API_HASH = os.environ.get("API_HASH","379596c99399dffbf5cd00f1242ec60c")
 BOT_TOKEN = os.environ.get("BOT_TOKEN","7368703568:AAHBeUxQuJ8Gusk4fI36wEBMgNqcbcG2uZU")
 DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://Zishan:Zishan@cluster0.pnwq7om.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-BOT_USERNAME = os.environ.get("BOT_USERNAME","Jisshu_delete_bot") # Without @
+#BOT_USERNAME = os.environ.get("BOT_USERNAME","Jisshu_delete_bot") # Without @
 
 #database
 client = AsyncIOMotorClient(DATABASE_URL)
@@ -30,9 +30,9 @@ bot = Client(
 @bot.on_message(filters.command("start") & filters.private)
 async def start(_, message):
     button = [[
-        InlineKeyboardButton("🎈 Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ 🎈", url=f"http://t.me/{BOT_USERNAME}?startgroup=none&admin=delete_messages"),
-        ],[
-        InlineKeyboardButton("🌿 Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 🌿", url=f"https://t.me/JISSHU_BOTS"),
+    #    InlineKeyboardButton("🎈 Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ 🎈", url=f"http://t.me/{BOT_USERNAME}?startgroup=none&admin=delete_messages"),
+  #      ],[
+        InlineKeyboardButton(" MY OWNER", url=f"https://t.me/IM_JISSHU")
     ]]
     await message.reply_text(
         f"**I ᴀᴍ Aᴜᴛᴏ Dᴇʟᴇᴛᴇ Bᴏᴛ, I ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴍᴇssᴀɢᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀғᴛᴇʀ ᴀ ᴄᴇʀᴛᴀɪɴ ᴘᴇʀɪᴏᴅ ᴏғ ᴛɪᴍᴇ.\n\nDᴏɴ'ᴛ Usᴇ Wɪᴛʜᴏᴜᴛ Mʏ Oᴡɴᴇʀ Pᴇʀᴍɪssɪᴏɴ.**",
