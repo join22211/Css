@@ -30,8 +30,6 @@ bot = Client(
 @bot.on_message(filters.command("start") & filters.private)
 async def start(_, message):
     button = [[
-    #    InlineKeyboardButton("🎈 Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ 🎈", url=f"http://t.me/{BOT_USERNAME}?startgroup=none&admin=delete_messages"),
-  #      ],[
         InlineKeyboardButton(" MY OWNER", url=f"https://t.me/IM_JISSHU")
     ]]
     await message.reply_text(
